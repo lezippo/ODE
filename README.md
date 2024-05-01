@@ -1,9 +1,17 @@
 # ODE
 Solution approximation using Euler's Method and Slope Field representations
 
-# Euler's Method for Ordinary Differential Equations (ODEs)
+1. [Theory](#theory)
 
-Euler's method is a simple numerical technique for solving ordinary differential equations (ODEs) numerically. It's particularly useful for first-order ODEs and serves as the foundation for more sophisticated numerical methods. Here's how it works:
+- [Problem Statement](#problem-statement)
+- [Euler's Method](#eulers-method)
+- [Accuracy and Stability](#accuracy-and-stability)
+2. [Code structure](#code-structure)
+- [myeuler](#myeuler)
+3. [Examples](#examples)
+
+
+# Theory
 
 ## Problem Statement
 
@@ -13,7 +21,8 @@ with an initial condition $y(x_0) = y_0$, we want to find the approximate soluti
 
 ## Euler's Method
 
-Euler's method approximates the solution to the ODE by performing successive linear approximations based on the derivative of the function $ f(x, y) $. Here's the iterative process:
+Euler's method is a simple numerical technique for solving ordinary differential equations (ODEs) numerically and serves as the foundation for more sophisticated numerical methods.
+It approximates the solution to the ODE by performing successive linear approximations based on the derivative of the function $f(x, y)$.
 
 1. **Initial Condition**: Start with the initial condition $y(x_0) = y_0$.
 2. **Step Size**: Choose a small step size $h$ that determines the distance between consecutive points along the $x$-axis.
@@ -30,3 +39,22 @@ Euler's method approximates the solution to the ODE by performing successive lin
 
 Euler's method is a first-order method, meaning its error decreases linearly with the step size $h$. While it's simple and easy to implement, it can suffer from stability issues and accumulate error over long intervals or when dealing with stiff ODEs. To mitigate these issues, smaller step sizes are often used, but this comes at the cost of increased computational effort.
 
+# Code structure
+
+## myeuler
+
+### Purpose
+Approximate the solution of the initial value problem $y'(t)=f(t,y(t)), y(t_0)=y_0$ with $t$ belonging to $[t_0,T]$ using Euler's method.
+
+### Input
+- `fname`: Function handle for $f(t,y(t))$.
+- `y0`: The initial value $(y(t_0)=y_0)$.
+- `t0`: The lower limit of integration.
+- `T`: The upper limit of integration.
+- `N`: The number of subintervals in which $[t_0,T]$ is divided.
+
+### Output
+- `t`: Mesh points.
+- `y` : Approximate values of the solution at the mesh points.
+
+# Examples

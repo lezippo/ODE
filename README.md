@@ -6,7 +6,7 @@ Solution approximation using Euler's Method and Slope Field representations
 - [Problem Statement](#problem-statement)
 - [Euler's Method](#eulers-method)
 - [Accuracy and Stability](#accuracy-and-stability)
-2. [Function documentation](#function-documentation)
+2. [Functions' documentation](#functions-documentation)
 - [myeuler](#myeuler)
 3. [Examples](#examples)
 

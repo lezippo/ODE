@@ -39,7 +39,7 @@ It approximates the solution to the ODE by performing successive linear approxim
 
 Euler's method is a first-order method, meaning its error decreases linearly with the step size $h$. While it's simple and easy to implement, it can suffer from stability issues and accumulate error over long intervals or when dealing with stiff ODEs. To mitigate these issues, smaller step sizes are often used, but this comes at the cost of increased computational effort.
 
-# Code structure
+# Function documentation
 
 ## myeuler
 

@@ -55,5 +55,3 @@ Approximate the solution of the initial value problem $y'(t)=f(t,y(t)), y(t_0)=y
 ### Output
 - `t`: Mesh points.
 - `y` : Approximate values of the solution at the mesh points.
-
-# Examples
